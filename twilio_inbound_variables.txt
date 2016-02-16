@@ -1,0 +1,18 @@
+MessageSid
+SmsSid
+AccountSid
+MessagingServiceSid
+From
+To
+Body
+NumMedia
+FromCity
+FromState
+FromZip
+FromCountry
+ToCity
+ToState
+ToZip
+ToCountry
+
+CreatePingRequest($expiry_timestamp, $event_id, $status=1){
