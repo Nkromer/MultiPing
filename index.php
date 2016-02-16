@@ -13,21 +13,21 @@ session_start();
 //TODO: fix file paths to current structure
 
 //Includes - config
-include("includes/config/config.inc.php");
+include("config/config.inc.php");
 
 //Master generic class
-include("includes/classes/vyda.generic.class.php");
+include("classes/vyda.generic.class.php");
  
 //Includes - classes
-include("includes/classes/vyda.mysql.php");
-include("includes/classes/vyda.webrequest.php");
-include("includes/classes/vyda.twilio.php");
+include("classes/vyda.mysql.php");
+include("classes/vyda.webrequest.php");
+include("classes/vyda.twilio.php");
 
 //Includes - MultiPING stuff
-include("includes/classes/multiping.people.php");
-include("includes/classes/multiping.events.php");
-include("includes/classes/multiping.messages.php");
-include("includes/classes/multiping.communication.php");
+include("classes/multiping.people.php");
+include("classes/multiping.events.php");
+include("classes/multiping.messages.php");
+include("classes/multiping.communication.php");
 
 //Instantiate the MySQL
 $MySQL_Control = new VYDA_MySQL($wpi_db_host, $wpi_db_name, $wpi_db_user, $wpi_db_pass);
@@ -66,7 +66,7 @@ $publicly_accessible = array(
 if($publicly_accessible[$_GET['func']] != ""){
 	
 	/* THIS IS A PUBLICLY ACCESSIBLE PAGE */
-	include("includes/pages/" . $publicly_accessible[$_GET['func']]);
+	include("pages/" . $publicly_accessible[$_GET['func']]);
 	
 }else{
 		
@@ -75,11 +75,11 @@ if($publicly_accessible[$_GET['func']] != ""){
 	
 		//Header
 		if(!isset($_GET['suppress_header'])){
-			include("includes/extra/header.html");
+			include("extra/header.html");
 		}
 	
 		//Func
-		$file_func = "includes/pages/{$clean_func}.php";
+		$file_func = "pages/{$clean_func}.php";
 				
 		//Determine if the get func is a real file
 		if(file_exists($file_func)){
@@ -90,19 +90,19 @@ if($publicly_accessible[$_GET['func']] != ""){
 		}else{
 			
 			//Dashboard by default
-			include("includes/pages/dashboard.php");
+			include("pages/dashboard.php");
 			
 		}
 		
 		//Footer
 		if(!isset($_GET['suppress_header'])){
-			include("includes/extra/footer.html");
+			include("extra/footer.html");
 		}
 		
 	}else{
 		
 		/* Needs Authentication */
-		include("includes/pages/login.php");
+		include("pages/login.php");
 		
 	}
 	

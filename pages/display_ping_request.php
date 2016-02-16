@@ -251,7 +251,7 @@
 
 				};
 				
-				xmlhttp.open("GET", "/includes/ajax/getResponses.php", true);
+				xmlhttp.open("GET", "ajax/getResponses.php", true);
 				xmlhttp.send();
 				
 			}

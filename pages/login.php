@@ -49,8 +49,8 @@ if(isset($_POST['username'])){
 	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 	<meta http-equiv="pragma" content="no-cache" />
 		
-	<link rel="stylesheet" href="includes/css/multiping.css">
-	<link rel="stylesheet" href="includes/css/normalize.css">
+	<link rel="stylesheet" href="css/multiping.css">
+	<link rel="stylesheet" href="css/normalize.css">
 		
 </head>
 	
