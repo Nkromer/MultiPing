@@ -37,19 +37,6 @@
 			
 			<br/><br/>
 			
-<!--			Specialty: <input type="text" name="specialty" value="<?PHP if(isset($_POST['specialty'])) echo htmlspecialchars($_POST['specialty']); ?>">
-			
-			<br/><br/>
-			
-			Priority: <input type="text" name="priority" value="<?PHP if(isset($_POST['priority'])) echo htmlspecialchars($_POST['priority']); ?>">
-			
-			<br/><br/>
-			
-			notes: <input type="text" name="notes" value="<?PHP if(isset($_POST['notes'])) echo htmlspecialchars($_POST['notes']); ?>">
-			
-			<br/><br/>
--->
-			
 			<button class='button submit_button' type="submit" name="CreateNewPerson">Create Person</button>
 			
 		</form>

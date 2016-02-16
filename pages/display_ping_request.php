@@ -98,8 +98,6 @@
 			<tr>
 				<th>Ping ID</th>
 				<th>Message</th>
-				<!--<th>Time Sent</th>
-				<th>Expires</th>-->
 				<th>Status</th>
 			</tr>
 			
@@ -109,8 +107,6 @@
 				echo "<tr>
 						<td>{$ping_request_info['id']}</td>
 						<td>{$ping_request_info['message_body']}</td>";
-						//<td>" . date("m/d/Y H:i:s", $ping_request_info['time_initiated']) . "</td>
-						//<td>" . date("m/d/Y H:i:s", $ping_request_info['time_closed']) . "</td>
 				echo	"<td>{$ping_request_info['status']}</td>
 					</tr>";
 						

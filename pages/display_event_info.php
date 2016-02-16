@@ -24,43 +24,6 @@
 	<br />	
 		
 	<h1 class="page_header"><?php echo "{$event_info['name']}"; ?></h1>
-	
-	<!--<br />
-	
-	<div class='button small_button'><a href='index.php?func=event_edit_info&event_id={$event_info['id']}'>Edit this event</a></div>
-							
-	<br/>
-	<br/>
-	
-	<div id="events_container" class="table_container">
-		
-		<table class="data_table">
-			
-			<tr>
-				<th>Event ID</th>
-				<th>Event Name</th>
-				<th>Time Begin</th>
-				<th>Time End</th>
-				<th>Location</th>
-				<th>Manager</th>
-				<th>Venue</th>
-				<th>Pings</th>
-			</tr>
-			
-			<?php /*
-					
-				echo "<tr>
-						<td>{$event_info['id']}</td>
-						<td>{$event_info['name']}</td>";
-						//<td>" . date("m/d/Y H:i:s", $event_info['time_begin']) . "</td>
-						//<td>" . date("m/d/Y H:i:s", $event_info['time_end']) . "</td>
-						//<td>{$event_info['location']}</td>
-				echo	"<td>{$num_pings}</td>
-					</tr>";
-						
-			*/?>
-			
-		</table>-->
 		
 		<br/>
 		
